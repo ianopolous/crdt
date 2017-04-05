@@ -10,7 +10,7 @@ Each element of the set has an associated counter which starts at zero. The pari
 An add operation does nothing if the element is already present. If the element is absent, then it increments the counter. 
 
 ## Remove:
-A remove operation dos nothing if the element is not present currently. It the element is present, then it increments the counter. 
+A remove operation does nothing if the element is not present currently. It the element is present, then it increments the counter. 
 
 ## Merge
 A merge operation takes the maximum of the counters for a given element. This clearly implies it is a state based CRDT, the counter itself is sent around, not the individual increments. 
