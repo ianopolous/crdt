@@ -15,6 +15,6 @@ A remove operation does nothing if the element is not present currently. It the 
 ## Merge
 A merge operation takes the maximum of the counters for a given element. This clearly implies it is a state based CRDT, the counter itself is sent around, not the individual increments. 
 
-This clearly forms a CRDT. An element can be added and removed an unlimited number of times. Unlike a PN-Set, you cannot reach a situation where an add operation doesn't end in the element being present. Compared to an OR-set CRDT, the storage space required is much less - O(1) per element rather than O(add operations on that element since the last remove).
+This clearly forms a CRDT. An element can be added and removed an unlimited number of times. Unlike a PN-Set, you cannot reach a situation where an add operation doesn't end in the element being present. Compared to an OR-set CRDT, the storage space required per element (whether removed or not) is much less - O(1) rather than O(add operations on that element since the last remove).
 
 You can reference this with, Parity-Set [Preston 2017]
